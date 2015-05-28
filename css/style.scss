@@ -1,0 +1,57 @@
+@import "normalize";
+@import "bourbon/bourbon";
+@import "icomoon";
+/*
+@import "grid-settings";
+@import "neat/neat";
+*/
+
+#content {
+  ul.album_list {
+    position: relative;
+    list-style: none;
+    background-color: #000;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    li.album {
+      position: relative;
+      display: inline-block;
+      width: 25vw;
+      &:hover {
+        z-index: 2;
+        img {
+          box-shadow: 0 0 16px 0 #333;
+          @include transform(scale(1.15));
+        }
+        a.play {
+          opacity: 1;
+        }
+      }
+      h3, h4 { display: none; }
+      img {
+        position: relative;
+        width: 100%;
+        vertical-align: middle;
+        @include transition(all, 0.25s, ease-in);
+      }
+      a.play {
+        display: none;
+        
+        opacity: 0;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        margin-left: -0.5em;
+        font-size: 3em;
+        color: #fff;
+        text-decoration: none;
+        text-shadow: 0 0 6px #888;
+        z-index: 2;
+        @include transition(all, 0.25s, ease-in);
+      }
+    }
+  }
+}
+
+audio { display: none; }

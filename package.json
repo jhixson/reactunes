@@ -1,0 +1,21 @@
+{
+  "name": "reactunes",
+  "version": "0.0.1",
+  "description": "Displays some good albums",
+  "author": "Jesse Hixson",
+  "devDependencies": {
+    "gulp": "~3.8.10",
+    "gulp-concat": "~2.4.2",
+    "gulp-ruby-sass": "~0.7.1",
+    "gulp-uglify": "~1.0.2",
+    "reactify": "~0.17.1",
+    "browserify": "~7.0.0",
+    "vinyl-source-stream": "~1.0.0",
+    "react": "~0.12.1",
+    "gulp-streamify": "0.0.5"
+  },
+  "dependencies": {
+    "lodash": "~2.4.1"
+  },
+  "main": "dist/index.html"
+}
