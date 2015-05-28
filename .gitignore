@@ -7,9 +7,6 @@
 # Ignore node modules. Run npm install
 /node_modules
 
-# Ignore bundle.js. Run npm start/build
-/dist
-
 # Ignore Sass' cache
 /.sass-cache
 
