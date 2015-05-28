@@ -33,9 +33,11 @@ gulp.task('copy', function() {
 });
 
 // Rerun the task when a file changes
-gulp.task('watch', function() {
+gulp.task('watcher', function() {
   gulp.watch(css_path, ['sass']);
   gulp.watch(js_path, ['js']);
 });
 
-gulp.task('default', ['watch', 'js', 'sass', 'copy']);
+gulp.task('watch', ['watcher', 'js', 'sass', 'copy']);
+
+gulp.task('default', ['js', 'sass', 'copy']);
